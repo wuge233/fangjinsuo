@@ -2,8 +2,9 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  NavLink
 } from 'react-router-dom'
+import "../style/pub.scss"
 import Index from '../components/Index';
 import List from '../components/List';
 import Login from '../components/Login';
@@ -16,13 +17,39 @@ const App = () => (
       <Route path="/list" component={List}/>
       <Route path="/login" component={Login}/>
       <Route path="/more" component={More}/>
-      <ul>
-        <li><Link to="/">
-            <p>首页</p>
-        </Link></li>
-        <li><Link to="/list">投资</Link></li>
-        <li><Link to="/login">登录</Link></li>
-        <li><Link to="/more">我的</Link></li>
+      <ul className="route">
+        <li>
+          <NavLink to="/" activeclassname="on">
+            <dl>
+              <dt className="shouye"></dt>
+              <dd>首页</dd>
+            </dl>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/list">
+            <dl>
+              <dt className="touzi"></dt>
+              <dd>投资</dd>
+            </dl>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/login">
+            <dl>
+              <dt className="denglu"></dt>
+              <dd>登录</dd>
+            </dl>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/more">
+            <dl>
+              <dt className="wode"></dt>
+              <dd>我的</dd>
+            </dl>
+          </NavLink>
+        </li>
       </ul>
     </div>
   </Router>

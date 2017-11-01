@@ -1,0 +1,159 @@
+@function px2rem($px){
+  @return $px/100px *1rem;
+}
+
+body{
+	font-size:px2rem(14px);
+	padding:0;
+	margin:0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a{
+	text-decoration:none;
+	cursor:pointer;
+	outline:0;
+}
+
+#more{
+	width:100%;
+	position: relative;
+	outline:0;
+}
+
+header{
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    .header{
+    	position: relative;
+	    display: flex;
+	    height: px2rem(45px);
+	    background: #de3031;
+	    color: #fff;
+	    .header-back{
+    	    position: relative;
+		    display: block;
+		    padding: 0 px2rem(12px);
+		    width: px2rem(27px);
+		    height: 100%;
+		    .icon{
+		    	position: absolute;
+			    width: px2rem(15px);
+			    height: px2rem(15px);
+			    left: 50%;
+			    top: 50%;
+			    margin-left: px2rem(-7.5px);
+			    margin-top: px2rem(-9.5px);
+			    transform: rotate(45deg);
+			    border: px2rem(2px) solid #fff;
+			    border-top: none;
+			    border-right: none;
+		    }
+	    }
+	    .header-title{
+	    	text-overflow: ellipsis;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    font-weight: 700;
+		    line-height: px2rem(45px);
+		    text-align: center;
+		    font-size: px2rem(16px);
+		    flex: 1;
+	    }
+	    .header-placeholder{
+	    	position: relative;
+		    padding: 0 px2rem(12px);
+		    width: px2rem(27px);
+	    }
+    }
+}
+
+.morebanner{
+	width: 100%;
+    padding-bottom: 54.25%;
+    background: url("../images/more-banner.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top:px2rem(45px);
+}
+
+.morelist{
+	padding-left: px2rem(10px);
+	list-style:none;
+	background-color: #fff;
+	margin:0;
+	li{
+		overflow: hidden;
+    	line-height: px2rem(50px);
+    	border-bottom: 1px solid #d9d9d9;
+    	a{
+		    display: block;
+    		position: relative;
+    		color: #333;
+    		.list-icon{
+    			float: left;
+			    margin-top: px2rem(14px);
+			    margin-right: px2rem(8px);
+			    width: px2rem(22px);
+			    height: px2rem(22px);
+    		}
+    		.list-info{
+			    margin-left: px2rem(23px);
+			    padding: px2rem(14.5px) 0;
+			    line-height: 1.5;
+			    font-size: px2rem(14px);
+			    color:#888;
+    		}
+    		.list-txt{
+    			position: absolute;
+			    top: 0;
+			    right: px2rem(25px);
+    		}
+    		.list-arrow{
+    			position: absolute;
+			    top: 40%;
+			    right: px2rem(10px);
+			    width: px2rem(8px);
+			    height: px2rem(8px);
+			    display: inline-block;
+			    border-right: 1px solid #ccc;
+			    border-bottom: 1px solid #ccc;
+			    cursor: pointer;
+			    transform: rotate(-45deg);
+			    clear:both;
+    		}
+    		.server{
+    			background: url("../images/more-sprite.png") no-repeat;
+    			background-size: px2rem(22px) px2rem(230px);
+    		}
+    		.weixin{
+    			background: url("../images/more-sprite.png") no-repeat;
+    			background-size: px2rem(22px) px2rem(230px);
+    			background-position: 0 px2rem(-27px);
+    		}
+    		.weibo{
+    			background: url("../images/more-sprite.png") no-repeat;
+    			background-size: px2rem(22px) px2rem(230px);
+    			background-position: 0 px2rem(-54px);
+    		}
+    		.guanwang{
+    			background: url("../images/more-sprite.png") no-repeat;
+    			background-size: px2rem(22px) px2rem(230px);
+    			background-position: 0 px2rem(-81px);
+    		}
+    		.help{
+    			background: url("../images/more-sprite.png") no-repeat;
+    			background-size: px2rem(22px) px2rem(230px);
+    			background-position: 0 px2rem(-108px);
+    		}
+    		.jieshao{
+    			background: url("../images/more-sprite.png") no-repeat;
+    			background-size: px2rem(22px) px2rem(230px);
+    			background-position: 0 px2rem(-162px);
+    		}
+    	}
+	}
+}
+

@@ -1,0 +1,57 @@
+@function px2rem($px){
+  @return $px/100px *1rem;
+}
+
+.route{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: px2rem(12px);
+    height: px2rem(58px);
+    border-top: 1px solid #e6e6e6;
+    width:100%;
+    background:#fff;
+    margin:0;
+    padding:0;
+    li{
+    	padding-top: px2rem(8px);
+	    display: block;
+	    color: #666;
+	    flex: 1;
+	    width: 25%;
+	    outline:0;
+	    dl{
+	    	margin:0;
+	    	dt{
+    		    width: px2rem(27px);
+			    height: px2rem(27px);
+			    background: url("../images/menu.png") -30px 0 no-repeat;
+			    background-size: px2rem(60px) px2rem(120px);
+			    margin: 0 auto px2rem(5px);
+			    
+	    	}
+	    	dd{
+	    		text-align:center;
+	    		margin:0;
+	    	}
+	    	.shouye{
+	    			background: url("../images/menu.png") no-repeat;
+	    			background-size: px2rem(60px) px2rem(120px);
+	    		}
+	    	.touzi{
+	    		background-position: 0 px2rem(-30px);
+	    	}
+	    	.denglu{
+	    		background-position: 0 px2rem(-60px);
+	    	}
+	    	.wode{
+	    		background-position: 0 px2rem(-90px);
+	    	}
+	    }
+	    .on{
+	    	color:#fb484b;
+	    	}
+    }
+}
