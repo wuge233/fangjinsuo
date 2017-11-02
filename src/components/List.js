@@ -1,28 +1,67 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import "../style/list.scss";
+import axios from 'axios';
 class ListUI extends Component {
 	componentDidMount() {
-		
+		this.props.getlists();
 	}
 	render() {
 		return (
-			<div id="">
-
+			<div id="list">
+				<form className="index-nav">
+					<input type="text" className="tab" value="理财" unselectable="on" readonly="readonly"/>
+					<input type="text" className="tab" value="网贷" unselectable="on" readonly="readonly"/>
+					<input type="text" className="tab" value="债权转让" unselectable="on" readonly="readonly"/>
+				</form>
+				<ul className="ui-list">
+					<li>
+						<a>
+							<span>默认</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span>默认</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span>默认</span>
+						</a>
+					</li>
+				</ul>
 			</div>
+
+			
+
+
+
 		)
 	}
 }
 
+function getData(dispatch) {
+	axios.post("")
+		.then((res)=>{
+			dispatch({
+				type: "GET_LIST_DATA",
+				payload: res.data.data
+			})
+			
+ 		})
+}
+
 const mapStateToProps = (state)=>{
 	return {
-		list: state.list
+		list1: state.list1
 	}
 }
 
 const mapDispatchToProps = (dispatch)=>{
 	return {
-		getData: function(){
+		getlists: ()=>{
+			getData(dispatch)
 		}
 	}
 }

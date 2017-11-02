@@ -9,6 +9,7 @@ import Index from '../components/Index';
 import List from '../components/List';
 import Login from '../components/Login';
 import More from '../components/More';
+import Help from '../components/Help';
 
 const App = () => (
   <Router>
@@ -17,6 +18,7 @@ const App = () => (
       <Route path="/list" component={List}/>
       <Route path="/login" component={Login}/>
       <Route path="/more" component={More}/>
+      <Route path="/help" component={Help}/>
       <ul className="route">
         <li>
           <NavLink to="/" activeclassname="on">

@@ -1,0 +1,28 @@
+@function px2rem($px){
+  @return $px/100px *1rem;
+}
+
+body{
+	font-size:px2rem(14px);
+	padding:0;
+	margin:0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+ul{
+	padding:0;
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+	cursor:pointer;
+	outline:0;
+    color: #00a5e0;
+}
+
+#safe{
+	width:100%;
+	position: relative;
+	outline:0;
+	background:red;
+}

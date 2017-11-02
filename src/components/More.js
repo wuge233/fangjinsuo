@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import "../style/more.scss";
 import axios from 'axios';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+import Help from '../components/Help';
 
 class MoreUI extends Component {
 	componentDidMount() {
@@ -79,6 +85,7 @@ class MoreUI extends Component {
 						</a>
 					</li>
 					<li>
+					<Link to={"/help"}>
 						<a>
 							<div className="list-icon help">
 								
@@ -92,6 +99,7 @@ class MoreUI extends Component {
 							<div className="list-arrow">
 							</div>
 						</a>
+					</Link>
 					</li>
 					<li>
 						<a>
@@ -109,6 +117,7 @@ class MoreUI extends Component {
 						</a>
 					</li>
 				</ul>
+				<Route path={"/help"} component={Help} />
 			</div>
 		)
 	}

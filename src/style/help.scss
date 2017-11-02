@@ -1,0 +1,119 @@
+@function px2rem($px){
+  @return $px/100px *1rem;
+}
+
+body{
+	font-size:px2rem(14px);
+	padding:0;
+	margin:0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+ul{
+	padding:0;
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+	cursor:pointer;
+	outline:0;
+    color: #00a5e0;
+}
+
+#help{
+	width:100%;
+	position: relative;
+	outline:0;
+}
+
+header{
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    .header{
+    	position: relative;
+	    display: flex;
+	    height: px2rem(45px);
+	    background: #de3031;
+	    color: #fff;
+	    .header-back{
+    	    position: relative;
+		    display: block;
+		    padding: 0 px2rem(12px);
+		    width: px2rem(27px);
+		    height: 100%;
+		    .icon{
+		    	position: absolute;
+			    width: px2rem(15px);
+			    height: px2rem(15px);
+			    left: 50%;
+			    top: 50%;
+			    margin-left: px2rem(-7.5px);
+			    margin-top: px2rem(-9.5px);
+			    transform: rotate(45deg);
+			    border: px2rem(2px) solid #fff;
+			    border-top: none;
+			    border-right: none;
+		    }
+	    }
+	    .header-title{
+	    	text-overflow: ellipsis;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    font-weight: 700;
+		    line-height: px2rem(45px);
+		    text-align: center;
+		    font-size: px2rem(16px);
+		    flex: 1;
+	    }
+	    .header-placeholder{
+	    	position: relative;
+		    padding: 0 px2rem(12px);
+		    width: px2rem(27px);
+	    }
+    }
+}
+
+.help-list{
+	font-size:px2rem(15px);
+	list-style:none;
+	margin-top:px2rem(55px);
+	li{
+	    position: relative;
+    	line-height: px2rem(40px);
+    	border-bottom: 1px solid #d9d9d9;
+    	margin-top: px2rem(10px);
+    	padding: 0 px2rem(10px);
+    	border-top: 1px solid #e0e0e0;
+    	a{
+    		display:block;
+    	}
+    	.help-icon{
+    		position: absolute;
+		    top: 40%;
+		    right: px2rem(10px);
+		    width: px2rem(8px);
+		    height: px2rem(8px);
+		    display: inline-block;
+		    border-right: 1px solid #ccc;
+		    border-bottom: 1px solid #ccc;
+		    cursor: pointer;
+		    transform: rotate(-45deg);
+    	}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

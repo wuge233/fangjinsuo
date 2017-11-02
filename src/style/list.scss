@@ -1,0 +1,61 @@
+@function px2rem($px){
+  @return $px/100px *1rem;
+}
+
+body{
+	font-size:px2rem(14px);
+	padding:0;
+	margin:0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+input{
+	outline:0;
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+#list{
+	width:100%;
+	outline:0;
+	margin-top:px2rem(45px);
+}
+
+.index-nav{
+	position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: px2rem(45px);
+    line-height: px2rem(45px);
+    background: #fff;
+    .tab{
+	    display: block;
+	    width: 33.3%;
+	    height: px2rem(45px);
+	    line-height: px2rem(45px);
+	    float: left;
+	    cursor: pointer;
+	    text-align: center;
+    }
+}
+
+.ui-list{
+	display: block;
+    flex: 7;
+    overflow: hidden;
+    list-style :none;
+    line-height: px2rem(45px);
+    text-align: center;
+    li{
+    	float: left;
+    	width: 33.3%;
+    	a{
+    		display: block;
+		    color: #797979;
+		    position: relative;
+	        user-select: none;
+    	}
+    }
+}
