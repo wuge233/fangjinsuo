@@ -1,31 +1,54 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-class LoginUI extends Component {
-	componentDidMount() {
-		
-	}
-	render() {
-		return (
-			<div id="">
+import React, { Component } from 'react';
+import '../style/login.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+} from 'react-router-dom';
 
-			</div>
-		)
-	}
+class Login extends Component {
+  constructor(){
+    super();
+  }
+  render() {
+    return (
+      <div className="Login">
+        <header>
+          <Link to="/" className="left tohome">&lt;</Link>
+          <div className="left title">登录</div>
+          <Link to="/register" className="right toregister">立即注册</Link>
+        </header>
+        <section></section>
+        <form>
+          <div className="ui-form">
+            <div className="ui-form-item ui-form-item-small-mg ui-border-b">
+              <label>手机号码</label>
+              <input type="tel" placeholder="请输入手机号码"/>
+              <i className="icon-phone"></i>
+            </div>
+            <div className="ui-form-item ui-form-item-small-mg">
+              <label>登录密码</label>
+              <input type="password" placeholder="请输入登录密码"/>
+              <i className="icon-invisible"></i>
+            </div>
+          </div>
+          <div className="ui-btn-wrap ui-form-t">
+            <button type="submit" className="ui-btn-lg ui-btn-danger">登录</button>
+          </div>
+          <div className="login-link clearfix">
+            <small className="pull-right">
+              <a className="" href="javascript:;">忘记密码？</a>
+            </small>
+          </div>
+          <ul className="login-tips">
+            <li className="login-tip-item">
+            *买房宝用户请用绑定的手机号作为用户名登录，登录密码不变(点击“忘记密码”可进行重置)。
+            </li>
+            </ul>
+        </form>
+      </div>
+    );
+  }
 }
-
-const mapStateToProps = (state)=>{
-	return {
-		list: state.list
-	}
-}
-
-const mapDispatchToProps = (dispatch)=>{
-	return {
-		getData: function(){
-		}
-	}
-}
-
-const Login = connect(mapStateToProps, mapDispatchToProps)(LoginUI);
 
 export default Login;

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action="/login" method="post">
+      <label for="mobile">手机号码</label><input type="text" id="mobile" name="name"/><br/>
+      <label for="psw">登录密码</label><input type="password" id="psw" name="password"/><br/>
+      <input type="submit" value="登录"/>
+    </form>
+
+    <p>Welcome to <%= title %></p>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+html, body,header,section,footer,input,button,ul,li,p,div{
+	margin: 0;
+	padding: 0;
+    outline: 0;
+} 
+html{
+	font-size: 16px;
+    height: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body{
+	font-size: 14px;
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+    position: relative;
+    background-color: #f3f3f3;
+}
+.FM-main {
+    width: 100%;
+    padding: 2.8125rem 0 4.25rem;
+}
+header{
+	height: 2.8125rem;
+	width: 100%;
+	background: #de3031;
+	line-height: 2.8125rem;
+	font-size: 1rem;
+}
+header .title{
+	text-align: center;
+	width: 60%;
+	color: #fff;
+	font-weight: 700;
+}
+header .tohome{
+	font-size: 2rem;
+}
+header a{
+	width: 20%;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+}
+section{
+	height: 8.96875rem;
+    background-color: #f6a0a0;
+    background: url(./img/login.bg.png) no-repeat;
+    background-size: cover;
+}
+.ui-form-vcode-btn{
+	position: absolute;
+    right: .375rem;
+    top: .4375rem;
+    height: 2.1875rem;
+    padding: 0 .78125rem;
+    border-radius: .0625rem;
+    background-color: #ffb400;
+    font-size: .875rem;
+    color: #fff;
+}
+a, button {
+    outline: 0;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0;
+}
+.ui-form-item-vcode img {
+    position: absolute;
+    right: .375rem;
+}
+.ui-form-hint {
+    margin: 0 .75rem;
+    padding: .625rem 0;
+    font-size: .75rem;
+    color: #787878;
+}
+.ui-form-line, .ui-form-line-notop, .ui-form-line-single, .ui-form-line-single-info {
+    font-size: .8125rem;
+    padding: .75rem;
+    color: #787878;
+}
+.ui-form-line-single, .ui-form-line-single-info {
+    color: #444;
+}
+.text-left {
+    text-align: left;
+}
+.text-block, h6, p {
+    line-height: 1.41;
+}
+p {
+    line-height: 1.41;
+}
+.ui-form-line-notop {
+    padding-top: 0;
+}
