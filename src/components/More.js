@@ -18,9 +18,9 @@ class MoreUI extends Component {
 			<div id="more">
 				<header>
 					<div className="header">
-						<a href="#" className="header-back">
+						<Link to="/" className="header-back">
 							<i className="icon"></i>
-						</a>
+						</Link>
 						<div className="header-title">更多</div>
 						<div className="header-placeholder"></div>
 					</div>

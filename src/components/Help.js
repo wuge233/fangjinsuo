@@ -17,9 +17,9 @@ class HelpUI extends Component {
 			<div id="help">
 				<header>
 					<div className="header">
-						<a href="#" className="header-back">
+						<Link to="/more" className="header-back">
 							<i className="icon"></i>
-						</a>
+						</Link>
 						<div className="header-title">帮助中心</div>
 						<div className="header-placeholder"></div>
 					</div>
