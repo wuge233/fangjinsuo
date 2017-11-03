@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../style/register.css';
+import '../style/register.scss';
 import {
   BrowserRouter as Router,
   Route,
@@ -121,11 +121,11 @@ class Register extends Component {
   render() {
     return (
       <div className="Register FM-main">
-        <header>
+        <header className="myhead">
           <Link to="/" className="left tohome">&lt;</Link>
           <div className="left title">注册</div>
         </header>
-        <section></section>
+        <section className='bgc'></section>
         <form>
           <div className="ui-form">
             <div className="ui-form-item ui-form-item-small-mg ui-border-b">
@@ -155,7 +155,7 @@ class Register extends Component {
             </div>
           </div>
           <p className="ui-form-hint">*8-20个字符（字母、数字），区分大小写</p>
-          <p className="text-left ui-form-line-single">
+          <p className="text-left ui-form-line-single"> 
             <span>已有账号，</span>
             <Link className="" to="/login">直接登录&gt;</Link>
           </p>

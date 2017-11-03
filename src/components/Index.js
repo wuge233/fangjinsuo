@@ -3,6 +3,12 @@ import {connect} from 'react-redux';
 import axios from 'axios';
 import "../style/index.scss"
 import { Carousel, WhiteSpace } from 'antd-mobile';
+import Login from '../components/Login';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 class IndexUI extends Component {
 	componentDidMount() {
@@ -13,7 +19,9 @@ class IndexUI extends Component {
 			<div id="index">
 				<header>
 					<div className="title">房金所</div>
-					<div className="user"></div>
+					<Link to="/login">
+            <div className="user"></div>
+          </Link>
 				</header>
 
 				<div className="banner">
@@ -65,6 +73,7 @@ class IndexUI extends Component {
   			    <div className="btn">
   			    	<a href="#">立即投资</a>
   			    </div>
+            <Route path="/login" component={Login}/>
 			</div>
 		)
 	}

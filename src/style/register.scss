@@ -1,0 +1,111 @@
+@function px2rem($px){
+  @return $px/100px *1rem;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+html, body,header,section,footer,input,button,ul,li,p,div{
+	margin: 0;
+	padding: 0;
+    outline: 0;
+} 
+html{
+	font-size: 16px;
+    height: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body{
+	font-size: 14px;
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+    position: relative;
+    background-color: #f3f3f3;
+}
+.FM-main {
+    width: 100%;
+    padding: px2rem(45px) 0 px2rem(68px);
+}
+.myhead{
+	height: px2rem(45px);
+	width: 100%;
+	background: #de3031;
+	line-height: px2rem(45px);
+	font-size: 1rem;
+}
+.myhead .title{
+	text-align: center;
+	width: 60%;
+	color: #fff;
+	font-weight: 700;
+}
+.myhead .tohome{
+	font-size: px2rem(32px);
+}
+.myhead a{
+	width: 20%;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+}
+.bgc{
+	height: px2rem(143.5px);
+    background-color: #f6a0a0;
+    background: url(../images/login.bg.png) no-repeat;
+    background-size: cover;
+}
+.ui-form-vcode-btn{
+	position: absolute;
+    right: px2rem(6px);
+    top: px2rem(7px);
+    height: px2rem(35px);
+    padding: 0 px2rem(12.5px);
+    border-radius: px2rem(10px);
+    background-color: #ffb400;
+    font-size: px2rem(14px);
+    color: #fff;
+}
+a, button {
+    outline: 0;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0;
+}
+.ui-form-item-vcode img {
+    position: absolute;
+    right: px2rem(6px);
+}
+.ui-form-hint {
+    margin: 0 px2rem(12px);
+    padding: px2rem(10px) 0;
+    font-size: px2rem(12px);
+    color: #787878;
+}
+.ui-form-line, .ui-form-line-notop, .ui-form-line-single, .ui-form-line-single-info {
+    font-size: px2rem(13px);
+    padding: px2rem(12px);
+    color: #787878;
+}
+.ui-form-line-single, .ui-form-line-single-info {
+    color: #444;
+}
+.text-left {
+    text-align: left;
+}
+.text-block, h6, p {
+    line-height: px2rem(22.56px);
+}
+p {
+    line-height: px2rem(22.56px);
+}
+.ui-form-line-notop {
+    padding-top: 0;
+}

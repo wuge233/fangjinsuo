@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../style/login.css';
+import Register from '../components/Register';
+import '../style/login.scss';
 import {
   BrowserRouter as Router,
   Route,
@@ -13,12 +14,12 @@ class Login extends Component {
   render() {
     return (
       <div className="Login">
-        <header>
+        <header className="myheader">
           <Link to="/" className="left tohome">&lt;</Link>
           <div className="left title">登录</div>
           <Link to="/register" className="right toregister">立即注册</Link>
         </header>
-        <section></section>
+        <section className="bg"></section>
         <form>
           <div className="ui-form">
             <div className="ui-form-item ui-form-item-small-mg ui-border-b">
