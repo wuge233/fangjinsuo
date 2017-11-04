@@ -14,96 +14,18 @@ class Register extends Component {
           username: '',
           password: ''
       }
-      // this.saveUser.bind(this);
   }
 
-   // phonenumber(data){
-   //  this.setState({
-   //    phonenumber: data
-   //  })
-   // }
-   // password(data){
-   //  this.setState({
-   //    password: data
-   //  })
-   // }
-   // changeUsername(e){
-   //  let uname = e.target.value;
-   //  this.setState({
-   //    userName: uname
-   //  })
-   //  console.log(this.state.userName);
-   // }
-   // changePassword(e){
-   //  let upwd = e.target.value;
-   //  this.setState({
-   //    userPswwword: upwd
-   //  })
-   // }
    register(username,password,that){
-    // alert(111)
-    // console.log(this.state.phonenumber);
-    // console.log(this.state.password);
-    // var userRegex = /^1[3,4,5,7,8]\d{9}$/;
-    // var pwRegex = /^[A-Za-z0-9_]{8,20}$/;
-    // if(this.state.phonenumber==''){
-    //   this.setState({
-    //     unameHelp: "用户名不能为空"
-    //   })
-    // }else{
-    //   if(!userRegex.test(this.state.phonenumber)){
-    //     this.setState({
-    //       unameHelp: "请输入正确的11位电话号"
-    //     })
-    //   }else{
-    //     this.setState({
-    //       unameHelp:""
-    //     })
-    //   }
-    // }
-    // if(this.state.password==''){
-    //   this.setState({
-    //     upwdHelp: "密码不能为空"
-    //   })
-    // }else{
-    //   if(!pwRegex.test(this.state.password)){
-    //     this.setState({
-    //       upwdHelp: "请输入8-20个字符（字母、数字，区分大小写）"
-    //     })
-    //   }else{
-    //     this.setState({
-    //       upwdHelp: ""
-    //     })
-    //   }
-
-      //alert(username);
-      //alert(password);
-    
-             axios.post('/api/register','username='+username+'&password='+password)
-          .then(function(res){
-            if(res.data){
-              that.props.history.push("/login")
-              //alert(111)
-            }else{
-              alert("用户名已存在")
-            }
-          })
-     
-    
-    
-    // axios.post("/api/register",{
-    //   username: this.state.phonenumber,
-    //   password: this.state.password
-    // }).then(res=>{console.log(res);
-    //   if(this.state.unameHelp==''&&this.state.upwdHelp==''){
-    //     if(res.data===false){
-    //       alert('用户已存在')
-    //     }else{
-    //       this.props.history.push('/login')
-    //     }
-    //   }
-    // }).catch(error=>{console.log(error);
-    // })
+    axios.post('/api/register','username='+username+'&password='+password)
+    .then(function(res){
+      if(res.data){
+        that.props.history.push("/login")
+        //alert(111)
+      }else{
+        alert("用户名已存在")
+      }
+    })
    }
 
   render() {
@@ -166,28 +88,4 @@ class Register extends Component {
     );   
   }
 }
-
-// class PhoneNumber extends Component{
-//   constructor(prop){
-//     super(prop);
-//   }
-//   render{
-//     var that = this;
-//     return <input ref="phone" type="text" placeholder="请输入手机号码"
-//     _this.props.phonenumbertext(ev.target.value)}}/>
-//   }
-// }
-
-// class Password extends Component{
-//   constructor(prop){
-//     super(prop);
-//    }
-//    render(){
-//     var that = this;
-//     return <input ref="pw" type="password" placeholder="请输入密码"
-//      _this.props.phonenumbertext(ev.target.value)}}/>
-//    }
-//    }
-
-
 export default Register;
