@@ -5,10 +5,12 @@ import registerServiceWorker from './registerServiceWorker';
 import {createStore, combineReducers} from 'redux';
 import {Provider} from 'react-redux';
 import IndexReducer from './reducers/IndexReducer';
+import ListReducer from './reducers/ListReducers';
 import './style/index.scss';
 
 const recuders = combineReducers({
-	list: IndexReducer
+	list: IndexReducer,
+	list1: ListReducer
 })
 const store = createStore(recuders, {});
 

@@ -8,6 +8,7 @@ import {
   Link
 } from 'react-router-dom';
 import Help from '../components/Help';
+import Intro from '../components/Intro';
 
 class MoreUI extends Component {
 	componentDidMount() {
@@ -102,6 +103,7 @@ class MoreUI extends Component {
 					</Link>
 					</li>
 					<li>
+					<Link to={"/intro"}>
 						<a>
 							<div className="list-icon jieshao">
 								
@@ -115,9 +117,11 @@ class MoreUI extends Component {
 							<div className="list-arrow">
 							</div>
 						</a>
+					</Link>
 					</li>
 				</ul>
 				<Route path={"/help"} component={Help} />
+				<Route path={"/intro"} component={Intro} />
 			</div>
 		)
 	}

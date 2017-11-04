@@ -31,7 +31,12 @@ class ListUI extends Component {
 						</a>
 					</li>
 				</ul>
+
+				<ul class="list-list">
+					
+				</ul>
 			</div>
+
 
 			
 
@@ -42,11 +47,11 @@ class ListUI extends Component {
 }
 
 function getData(dispatch) {
-	axios.post("")
+	axios.get("")
 		.then((res)=>{
 			dispatch({
 				type: "GET_LIST_DATA",
-				payload: res.data.data
+				payload: res.data
 			})
 			
  		})

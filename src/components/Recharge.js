@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import "../style/safe.scss";
+import "../style/recharge.scss";
 import {
   BrowserRouter as Router,
   Route,
@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import Help from '../components/Help';
 
-class SafeUI extends Component {
+class RechargeUI extends Component {
 	constructor(){
 		super();
 		this.change = this.change.bind(this);
@@ -52,7 +52,7 @@ class SafeUI extends Component {
 	}
 	render() {
 		return (
-			<div id="safe">
+			<div id="recharge">
 				<header>
 					<div className="header">
 						<Link to="/help" className="header-back">
@@ -63,7 +63,7 @@ class SafeUI extends Component {
 					</div>
 				</header>
 
-					<ul className="safe-list">
+					<ul className="recharge-list">
 						<li onClick={this.change1}>
 							<a>
 								<div>
@@ -133,6 +133,6 @@ const mapDispatchToProps = (dispatch)=>{
 }
 
 
-const Safe = connect(mapStateToProps, mapDispatchToProps)(SafeUI);
+const Recharge = connect(mapStateToProps, mapDispatchToProps)(RechargeUI);
 
-export default Safe;
+export default Recharge;

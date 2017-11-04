@@ -11,6 +11,12 @@ import Login from '../components/Login';
 import Register from '../components/Register';
 import More from '../components/More';
 import Help from '../components/Help';
+import Safe from '../components/Safe';
+import Recharge from '../components/Recharge';
+import Invest from '../components/Invest';
+import Signin from '../components/Signin';
+import Loan from '../components/Loan';
+import Intro from '../components/Intro';
 
 const App = () => (
   <Router>
@@ -21,6 +27,14 @@ const App = () => (
       <Route path="/register" component={Register}/>
       <Route path="/more" component={More}/>
       <Route path="/help" component={Help}/>
+      <Route path="/safe" component={Safe}/>
+      <Route path="/recharge" component={Recharge}/>
+      <Route path="/invest" component={Invest}/>
+      <Route path="/signin" component={Signin}/>
+      <Route path="/loan" component={Loan}/>
+      <Route path="/intro" component={Intro}/>
+
+
       <ul className="route">
         <li>
           <NavLink to="/" activeclassname="on">

@@ -1,0 +1,170 @@
+@function px2rem($px){
+  @return $px/100px *1rem;
+}
+
+body{
+	font-size:px2rem(14px);
+	padding:0;
+	margin:0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+ul{
+	padding:0;
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+	cursor:pointer;
+    color: #00a5e0;
+    user-select:none;
+}
+
+p{
+	line-height:1.41;
+}
+
+#intro{
+	width:100%;
+	position: relative;
+	outline:0;
+}
+
+header{
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    .header{
+    	position: relative;
+	    display: flex;
+	    height: px2rem(45px);
+	    background: #de3031;
+	    color: #fff;
+	    .header-back{
+    	    position: relative;
+		    display: block;
+		    padding: 0 px2rem(12px);
+		    width: px2rem(27px);
+		    height: 100%;
+		    .icon{
+		    	position: absolute;
+			    width: px2rem(15px);
+			    height: px2rem(15px);
+			    left: 50%;
+			    top: 50%;
+			    margin-left: px2rem(-7.5px);
+			    margin-top: px2rem(-9.5px);
+			    transform: rotate(45deg);
+			    border: px2rem(2px) solid #fff;
+			    border-top: none;
+			    border-right: none;
+		    }
+	    }
+	    .header-title{
+	    	text-overflow: ellipsis;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    font-weight: 700;
+		    line-height: px2rem(45px);
+		    text-align: center;
+		    font-size: px2rem(16px);
+		    flex: 1;
+	    }
+	    .header-placeholder{
+	    	position: relative;
+		    padding: 0 px2rem(12px);
+		    width: px2rem(27px);
+	    }
+    }
+}
+
+div.first{
+	margin:px2rem(45px) 0 px2rem(10px);
+}
+
+.content{
+	width: 100%;
+    padding: 0 0 px2rem(5px) px2rem(15px);
+    margin: px2rem(10px) 0;
+    border-top: px2rem(1px) solid #e0e0e0;
+    border-bottom: px2rem(1px) solid #e0e0e0;
+    .pic1{
+	    width: px2rem(184px);
+	    height: px2rem(75.5px);
+	    background: url(../images/about_01.png) no-repeat;
+	    background-size: px2rem(184px) px2rem(75.5px);
+	    margin: px2rem(15px) auto;
+    }
+    .pic2{
+    	width: px2rem(99px);
+	    height: px2rem(79.5px);
+	    background: url(../images/about_02.png) no-repeat;
+	    background-size: px2rem(99px) px2rem(79.5px);
+	    margin: px2rem(15px) auto;
+    }
+    .pic3{
+    	width: px2rem(91.5px);
+	    height: px2rem(68px);
+	    background: url(../images/about_03.png) no-repeat;
+	    background-size: px2rem(91.5px) px2rem(68px);
+	    margin: px2rem(15px) auto;
+    }
+    .title{
+    	font-size: px2rem(30px);
+    	margin-bottom: px2rem(15px);
+    	font-weight:bold;
+    }
+    .txt{
+    	font-size: px2rem(16px);
+    	margin-bottom: px2rem(5px);
+    }
+}
+
+.subcontent{
+	display: flex;
+    margin: px2rem(10px) 0;
+    border-top: px2rem(1px) solid #e0e0e0;
+    border-bottom: px2rem(1px) solid #e0e0e0;
+    margin-bottom:px2rem(150px);
+    .subcontent-list{
+	    display: block;
+	    padding: px2rem(10px) 0;
+	    flex: 1;
+	    color: #333;
+	    text-align: center;
+	    .icon-boke{
+    	    display: inline-block;
+		    width: 35px;
+		    height: 30px;
+		    background: url(../images/about_04.png) no-repeat;
+		    background-size: px2rem(35px) px2rem(30px);
+		    margin-right: px2rem(5px);
+		    vertical-align: middle;
+	    }
+	    .icon-weixin{
+    	    display: inline-block;
+		    width: 35px;
+		    height: 30px;
+		    background: url(../images/about_05.png) no-repeat;
+		    background-size: px2rem(35px) px2rem(30px);
+		    margin-right: px2rem(5px);
+		    vertical-align: middle;
+	    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

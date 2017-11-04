@@ -7,6 +7,10 @@ import {
   Link
 } from 'react-router-dom';
 import Safe from '../components/Safe';
+import Recharge from '../components/Recharge';
+import Invest from '../components/Invest';
+import Signin from '../components/Signin';
+import Loan from '../components/Loan';
 
 class HelpUI extends Component {
 	componentDidMount() {
@@ -27,29 +31,41 @@ class HelpUI extends Component {
 
 				<ul className="help-list">
 					<li>
-						<a href="#">1、充值提现</a>
-						<div className="help-icon"></div>
+						<Link to={"/recharge"}>
+							<a href="#">1、充值提现</a>
+							<div className="help-icon"></div>
+						</Link>
 					</li>
 					<li>
-						<Link to={`${this.props.match.url}/detail/safe`}>
+						<Link to={"/safe"}>
 							<a href="#">2、安全中心</a>
 							<div className="help-icon"></div>
 						</Link>
 					</li>
 					<li>
-						<a href="#">3、投资收益</a>
-						<div className="help-icon"></div>
+						<Link to={"/invest"}>
+							<a href="#">3、投资收益</a>
+							<div className="help-icon"></div>
+						</Link>
 					</li>
 					<li>
-						<a href="#">4、注册登录</a>
-						<div className="help-icon"></div>
+						<Link to={"/signin"}>
+							<a href="#">4、注册登录</a>
+							<div className="help-icon"></div>
+						</Link>
 					</li>
 					<li>
-						<a href="#">5、我要借款</a>
-						<div className="help-icon"></div>
+						<Link to={"/loan"}>
+							<a href="#">5、我要借款</a>
+							<div className="help-icon"></div>
+						</Link>
 					</li>
 				</ul>
-				<Route path={`${this.props.match.url}/safe`} component={Safe} />
+				<Route path={"/safe"} component={Safe} />
+				<Route path={"/recharge"} component={Recharge} />
+				<Route path={"/invest"} component={Invest}/>
+				<Route path={"/signin"} component={Signin}/>
+				<Route path={"/loan"} component={Loan}/>
 			</div>
 		)
 	}
