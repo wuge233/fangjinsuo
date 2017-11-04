@@ -4,25 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var session = require('express-session');
-
-require("./datebase");
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var register = require('./routes/register');
-var login = require('./routes/login');
-
+var api = require('./routes/api')
 var app = express();
-
-app.use(session({
-  name: "myNodeSessID",
-  secret:"dw3243dw",
-  cookie: {maxAge: 1000*3600 }, //1小时
-  resave: true,
-  saveUninitialized: true
-}));
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -38,8 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/register', register);
-app.use('/login', login);
+app.use('/api',api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -59,8 +44,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(7777,function(){
-    console.log("Started listening on port", 7777);
-});
-
 module.exports = app;
+
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://127.0.0.1:27017/yichuanshi')
