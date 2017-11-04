@@ -48,7 +48,7 @@ class Login extends Component {
           <div className="ui-btn-wrap ui-form-t">
            
             <button type="submit" className="ui-btn-lg ui-btn-danger" onClick={()=>{this.register(this.refs.user.value,this.refs.pw.value,this)}}>
-          完成注册
+          登录
           </button>
           </div>
           <div className="login-link clearfix">
