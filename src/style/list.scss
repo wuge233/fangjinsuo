@@ -14,6 +14,12 @@ input{
 	padding:0;
 	border:none;
 }
+ul{
+	list-style:none;
+}
+p{
+	line-height:1.41;
+}
 
 #list{
 	width:100%;
@@ -40,14 +46,13 @@ input{
 	    text-align: center;
     }
 }
-
 .ui-list{
-	display: block;
+	display: flex;
     flex: 7;
     overflow: hidden;
-    list-style :none;
     line-height: px2rem(45px);
     text-align: center;
+    z-index:1000;
     li{
     	float: left;
     	width: 33.3%;
@@ -59,3 +64,96 @@ input{
     	}
     }
 }
+
+
+.pro-list{
+	overflow: hidden;
+	.last{
+		margin-bottom:px2rem(100px);
+	}
+	li{
+	    margin-bottom: px2rem(10px);
+	    background: #fff;
+	    position: relative;
+	    border-top: 1px solid #e0e0e0;
+	    border-bottom: 1px solid #e0e0e0;
+	    .ui-pro{
+	    	outline: 0;
+	    	height:px2rem(100px);
+	    	.pro-title{
+    		    position: relative;
+			    overflow: hidden;
+			    margin-top: px2rem(15px);
+			    height: px2rem(22px);
+			    line-height: px2rem(22px);
+			    font-size: px2rem(12px);
+			    margin-bottom: 0;
+			    text-indent: px2rem(20px);
+			    color: #D6D8D1;
+    			background-color: #fff;
+	    	}
+	    	.section1{
+    		    width: 35%;
+			    text-align: left;
+			    text-indent: px2rem(20px);
+		        padding: px2rem(10px) 0;
+		        float:left;
+		        .pro-data-r{
+		        	color: #D6D8D1;
+    				background-color: #fff;
+				    width: px2rem(124px);
+				    font-size: px2rem(25px);
+				    .ui-num{
+			    		line-height: px2rem(50px);
+			    	}
+		        }
+	    	}
+	    	.section2{
+	    		width: 35%;
+			    text-align: center;
+		        padding: px2rem(10px) 0;
+		        float:left;
+		        margin-top:px2rem(18px);
+		        .ui-data-p{
+		        	color: #D6D8D1;
+    				background-color: #fff;
+    				font-size:px2rem(18px);
+		        }
+	    	}
+	    	.section3{
+	    		width:30%;
+	    		float:left;
+	    		.ui-invest{
+	    			display: block;
+				    width: 65%;
+				    height: px2rem(27px);
+				    line-height: px2rem(27px);
+				    background-color: #ccc;
+				    color: #fff;
+				    margin: px2rem(30px) auto;
+				    text-align: center;
+				    border-radius: px2rem(5px);
+	    		}
+	    	}
+	    }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

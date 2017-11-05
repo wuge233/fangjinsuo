@@ -75,3 +75,196 @@ header{
 	    }
     }
 }
+.ui-overview{
+	position: relative;
+	background-color: #fff;
+	margin-top: px2rem(73.5px);
+    padding: px2rem(25px) px2rem(10px) 0;
+    .icon-SXD{
+	    position: absolute;
+	    display: inline-block;
+	    top: 0;
+	    left: 0;
+	    width: px2rem(73.5px);
+	    height: px2rem(19.5px);
+        background: url(../images/products-type.png) no-repeat;
+		background-size: px2rem(73.5px) px2rem(280px);
+		background-position: 0 px2rem(-100px);
+    }
+    h3{
+    	line-height: px2rem(30px);
+	    padding-right: px2rem(55px);
+	    font-size: px2rem(16px);
+	    margin: 0;
+	    color: #333;
+    }
+    .earn-wrapper{
+    	width:px2rem(355px);
+    	height:px2rem(39px);
+    	.left{
+		    font-size: px2rem(37px);
+		    color: #ff5c5d;
+		    margin-right: px2rem(5px);
+		    line-height: px2rem(39px);
+		    float:left;
+    	}
+    	.left:last-child{
+    		font-size:px2rem(15px);
+    		color:#666;
+    	}
+    }
+    .detail-data{
+    	background-color: #f4f4f4;
+	    margin-top: px2rem(15px);
+	    display: flex;
+	    box-sizing: border-box;
+	    padding: px2rem(7px) px2rem(12px);
+	    .data-item{
+		    flex: 1;
+		    text-align: center;
+		    padding: px2rem(7px) 0;
+		    border-right: 1px solid #e0e0e0;
+		    .item-title{
+	    	    height: px2rem(18px);
+			    line-height: px2rem(18px);
+			    margin-bottom: px2rem(5px);
+			    color: #666;
+			    font-size: px2rem(12px);
+		    }
+		    .item-count{
+	    	    line-height: px2rem(18px);
+			    color: #333;
+			    font-size: px2rem(16px);
+			    font-weight: 700;
+		    }
+	    }
+    }
+    .feature-list{
+    	display: flex;
+    	box-sizing: border-box;
+    	.f-item{
+		    flex: 1;
+		    color: #999;
+		    font-size: px2rem(12px);
+		    padding: px2rem(9px) 0;
+		    span{
+	    	    display: block;
+			    margin-left: px2rem(24px);
+			    line-height: px2rem(19px);
+		    }
+		    .icon-transfer{
+		    	display: inline-block;
+			    width: px2rem(19px);
+			    height: px2rem(19px);
+			    background: url(../images/feature-sprite.png) 0 px2rem(1px) no-repeat;
+			    background-size: px2rem(19px) auto;
+			    background-position: 0 px2rem(-40px);
+			    float:left;
+		    }
+		    .icon-dollar{
+		    	display: inline-block;
+			    width: px2rem(19px);
+			    height: px2rem(19px);
+			    background: url(../images/feature-sprite.png) 0 px2rem(1px) no-repeat;
+			    background-size: px2rem(19px) auto;
+			    float:left;
+		    }
+		    .icon-interest{
+		    	display: inline-block;
+			    width: px2rem(19px);
+			    height: px2rem(19px);
+			    background: url(../images/feature-sprite.png) 0 px2rem(1px) no-repeat;
+			    background-size: px2rem(19px) auto;
+			    background-position: 0 px2rem(-20px);
+			    float:left;
+		    }
+
+    	}
+    }
+    .ui-box{
+	    overflow: hidden;
+    	padding-left: px2rem(10px);
+    	margin-top: px2rem(8px);
+    	background-color:#fff;
+    	.ui-box-tit{
+		    font-size: px2rem(13px);
+		    color: #333;
+		    border-bottom: 1px solid #e0e0e0;
+		    line-height: px2rem(32px);
+		    margin-bottom: 0;
+		    .icon-huan{
+		    	display: inline-block;
+			    width: px2rem(20px);
+			    height: px2rem(21px);
+			    margin-right: px2rem(5px);
+			    background: url(../images/detail-sprite.png) no-repeat;
+			    background-size: px2rem(20px) px2rem(185px);
+			    vertical-align: middle;
+			    background-position: 0 px2rem(-66.5px);
+		    }
+    	}
+    	.ui-box-group{
+    		dl{
+			    line-height: px2rem(28px);
+			    font-size: px2rem(12px);
+			    dt{
+			    	float: left;
+				    overflow: hidden;
+				    clear: left;
+				    white-space: nowrap;
+				    color: #999;
+				    text-align: right;
+				    width: px2rem(86px);
+			    }
+			    dd{
+			    	margin-left: px2rem(88px);
+			    	color:#333;
+			    }
+    		}
+    	}
+    }
+    .ui-box-user{
+		    border-top: #e0e0e0 1px solid;
+    		border-bottom: #e0e0e0 1px solid;
+    		margin-top: px2rem(8px);
+    		margin-bottom :px2rem(100px);
+    		background-color: #fff;
+		    overflow: hidden;
+    		padding-left: px2rem(10px);
+    		.ui-box-tit{
+			    font-size: px2rem(13px);
+			    color: #333;
+			    border-bottom: 1px solid #e0e0e0;
+			    line-height: px2rem(32px);
+			    margin-bottom: 0;
+			    .icon-huan{
+			    	display: inline-block;
+				    width: px2rem(20px);
+				    height: px2rem(21px);
+				    margin-right: px2rem(5px);
+				    background: url(../images/detail-sprite.png) no-repeat;
+				    background-size: px2rem(20px) px2rem(185px);
+				    vertical-align: middle;
+			    }
+	    	}
+	    	.ui-box-user-count{
+    		    dl{
+    		    	line-height: px2rem(28px);
+				    font-size: px2rem(12px);
+				    dt{
+				    	float: left;
+					    overflow: hidden;
+					    clear: left;
+					    white-space: nowrap;
+					    color: #999;
+					    text-align: right;
+					    width: px2rem(86px);
+			    	}
+				    dd{
+				    	margin-left: px2rem(88px);
+				    	color:#333;
+			    }
+    		    }
+	    	}
+    	}
+}

@@ -17,6 +17,7 @@ import Invest from '../components/Invest';
 import Signin from '../components/Signin';
 import Loan from '../components/Loan';
 import Intro from '../components/Intro';
+import Detail from '../components/Detail';
 
 const App = () => (
   <Router>
@@ -33,6 +34,7 @@ const App = () => (
       <Route path="/signin" component={Signin}/>
       <Route path="/loan" component={Loan}/>
       <Route path="/intro" component={Intro}/>
+      <Route path="/detail/:id" component={Detail} />
 
 
       <ul className="route">
